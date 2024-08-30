@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="text" name="num" id="num" placeholder="Enter first number">
+    <button onclick="square()">Calculator</button>
+
+    <script>
+      function square() {
+        let number = parseInt(document.getElementById("num").value);
+        let sq = number * number;
+        alert(`The square of ${number} is ${sq}`);
+      }
+    </script>
+  </body>
+</html>
